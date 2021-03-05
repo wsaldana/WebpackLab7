@@ -69,17 +69,7 @@ async function loadMessages(firstRun){
                 var msgBox = document.createElement("div");
                 msgContainer.appendChild(msgBox);
                 msgBox.className = "msgBox";
-                msgBox.style.padding = "20px";
-                msgBox.style.marginBottom = "15px";
-                msgBox.style.width = "wrap-content";
-                msgBox.style.maxWidth = "60%";
-                msgBox.style.height = "wrap-content";
-                msgBox.style.Left = "20px";
-                msgBox.style.backgroundColor = "rgb(60,60,60)";
-                msgBox.style.boxShadow = "0 2px 10px 0 black";
-                msgBox.style.fontSize = "20px";
-                msgBox.style.color = "white";
-                msgBox.style.fontFamily = "Arial, Helvetica, sans-serif";
+                
                 if(msgText.user == username){
                     msgBox.style.borderRadius = "12px 12px 0 12px";
                     msgBox.style.alignSelf = "flex-end";
