@@ -1,1 +1,2 @@
-alert("Bienvenido al chat de webpack");
+import './index/bienvenida';
+import './chat/chat';

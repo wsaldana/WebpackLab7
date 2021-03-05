@@ -1,5 +1,14 @@
 //Walter Saldaña #19897
 
+import {getUrlParam} from './readUserName';
+import {autoResizeHeight} from './autoResize';
+
+function validarURL(str) {
+    const patron = new RegExp("^(?:http(s)?:\\/\\/)?[\\w.-]+(?:\\.[\\w\\.-]+)+[\\w\\-\\._~:/?#[\\]@!\\$&'\\(\\)\\*\\+,;=.]+$");
+    console.log(patron.test(str));
+    return patron.test(str);
+}
+
 function handleKeyPress(e){
     var key=e.keyCode || e.which;
     if (key==13){
@@ -106,7 +115,7 @@ async function loadMessages(firstRun){
 
 var sendIcon = document.getElementById("sendIcon");
 btn.appendChild(sendIcon);
-sendIcon.src = "icons/send.png";
+sendIcon.src = "../icons/send.png";
 
 loadMessages(true);
 
