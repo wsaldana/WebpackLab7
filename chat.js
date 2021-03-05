@@ -23,7 +23,8 @@ function postMessages(msg){
 
 var ids = [];
 
-var username = prompt("Ingrese su nombre de usuario: ");
+//var username = prompt("Ingrese su nombre de usuario: ");
+var username = getUrlParam("txtUserName", "Guest")
 
 var body = (document.getElementsByTagName("body"))[0];
 
