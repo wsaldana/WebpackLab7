@@ -1,5 +1,6 @@
 //Walter Saldaña #19897
 
+import '../chat/chatStyle.scss';
 import {getUrlParam} from './readUserName';
 import {autoResizeHeight} from './autoResize';
 
