@@ -33,12 +33,6 @@ function postMessages(msg){
     });
 }
 
-function validarURL(str) {
-    const patron = new RegExp("^(?:http(s)?:\\/\\/)?[\\w.-]+(?:\\.[\\w\\.-]+)+[\\w\\-\\._~:/?#[\\]@!\\$&'\\(\\)\\*\\+,;=.]+$");
-    console.log(patron.test(str));
-    return patron.test(str);
-}
-
 var ids = [];
 
 var username = prompt("Ingrese su nombre de usuario: ");
