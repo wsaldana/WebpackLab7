@@ -79,7 +79,8 @@ async function loadMessages(firstRun){
             if(ids.includes(msgText.id) == false){
                 var msgBox = document.createElement("div");
                 msgContainer.appendChild(msgBox);
-                msgBox.className = "msgBox";
+                //msgBox.className = "msgBox";
+                msgBox.classList = "msgBox animate__animated animate__bounceIn";
                 
                 if(msgText.user == username){
                     msgBox.style.borderRadius = "12px 12px 0 12px";
