@@ -8,13 +8,6 @@ function handleKeyPress(e){
     }
 }
 
-function getMessages(){
-    var json;
-    fetch('http://3.129.101.133:3050/chats')
-        .then(results => results.json())
-        .then(json => json);
-}
-
 function postMessages(msg){
     fetch('http://3.129.101.133:3050/add',{
         method: 'POST',
